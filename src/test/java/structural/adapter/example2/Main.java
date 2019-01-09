@@ -1,6 +1,5 @@
 package structural.adapter.example2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -9,7 +8,9 @@ public class Main {
         EmployeeClient client = new EmployeeClient();
         List<Employee> employees = client.getEmployeeList();
 
-        System.out.println(employees);
+        for (Employee employee : employees) {
+            System.out.println(employee);
 
+        }
     }
 }
