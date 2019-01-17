@@ -1,7 +1,5 @@
 package creational.singleton;
 
-import org.apache.derby.client.am.SqlException;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -20,7 +18,6 @@ public class Main {
         timeAfter = System.currentTimeMillis();
 
         System.out.println(timeBefore - timeAfter);
-
 
         Statement statement;
 
