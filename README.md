@@ -1,2 +1,3 @@
 # build-with-design-patterns
-Test
+Design patterns for the rescure as I began to terribly struggle with handling and organizing
+structures of objects interacting wih each other
