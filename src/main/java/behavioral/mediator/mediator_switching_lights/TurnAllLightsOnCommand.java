@@ -1,6 +1,6 @@
 package behavioral.mediator.mediator_switching_lights;
 
-//concrete command
+//concrete colleague
 public class TurnAllLightsOnCommand implements Command {
 
     private Mediator mediator;
