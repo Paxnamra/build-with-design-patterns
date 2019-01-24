@@ -1,7 +1,8 @@
-package behavioral.memento;
+package behavioral.memento.plain_employee;
 
 import java.io.*;
 
+//memento
 public class Demo {
 
     private static Employee deserialize(){

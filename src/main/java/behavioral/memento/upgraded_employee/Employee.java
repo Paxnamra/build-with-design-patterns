@@ -1,17 +1,16 @@
-package behavioral.memento;
+package behavioral.memento.upgraded_employee;
 
-import java.io.Serializable;
-
-//origginator
-@SuppressWarnings("serial")
-public class Employee implements Serializable {
+//originator
+public class Employee {
 
     private String name;
     private String address;
     private String phone;
 
+    /*
     public Employee() {
     }
+    */
 
     public String getPhone() {
         return phone;
@@ -45,5 +44,14 @@ public class Employee implements Serializable {
         sb.append(", phone='").append(phone).append('\'');
         sb.append('}');
         return sb.toString();
+    }
+
+    public EmployeeMemento save() {
+        return new EmployeeMemento(name, phone);
+    }
+
+    public void undoSave(EmployeeMemento employeeMemento) {
+        this.name = employeeMemento.getName();
+        this.phone = employeeMemento.getPhone();
     }
 }
