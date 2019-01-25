@@ -1,0 +1,48 @@
+package behavioral.state.upgraded_fan;
+
+public class Fan {
+
+    State fanOffState;
+    State fanLowState;
+    State fanMedState;
+    State fanHighState;
+
+    State state;
+    
+    public Fan() {
+        fanOffState = new FanOffState(this);
+        fanLowState = new FanLowState(this);
+        fanMedState = new FanMedState(this);
+        fanHighState = new FanHighState(this);
+
+        state = fanOffState;
+    }
+
+    public State getFanOffState() {
+        return fanOffState;
+    }
+
+    public State getFanHighState() {
+        return fanHighState;
+    }
+
+    public State getFanMedState() {
+        return fanMedState;
+    }
+
+    public State getFanLowState() {
+        return fanOffState;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    public void pullChain() {
+        state.handleRequest();
+    }
+
+    public String toString() {
+        return state.toString();
+    }
+}

@@ -1,4 +1,4 @@
-package behavioral.state;
+package behavioral.state.simple_fan;
 
 public class Fan {
 
