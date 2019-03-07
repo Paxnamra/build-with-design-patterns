@@ -1,4 +1,4 @@
-package creational.prototype;
+package creational.prototype.simple_copy;
 
 import java.util.List;
 
