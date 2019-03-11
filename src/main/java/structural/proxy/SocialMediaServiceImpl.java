@@ -47,7 +47,7 @@ public class SocialMediaServiceImpl implements SocialMediaService {
 
     @Override
     public void postToTimeline(String screenName, String messsge) {
-        //should not be allowed
+        System.out.println("Should not be allowed");
 
     }
 }

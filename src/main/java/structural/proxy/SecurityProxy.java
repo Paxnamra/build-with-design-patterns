@@ -23,7 +23,11 @@ public class SecurityProxy implements InvocationHandler {
         Object result;
 
         try {
-            result = method.invoke(obj, args);
+            if (method.getName().contains("post")) {
+                throw new IllegalAccessException("Posts are not allowed");
+            } else {
+                result = method.invoke(obj, args);
+            }
         } catch (InvocationTargetException e) {
             throw e.getTargetException();
         } catch (Exception e) {

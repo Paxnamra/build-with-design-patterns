@@ -5,5 +5,7 @@ public class Main {
         SocialMediaService service = (SocialMediaService) SecurityProxy.newInstance(new SocialMediaServiceImpl());
 
         System.out.println(service.getTitleName("hgfd"));
+
+        service.postToTimeline("hgfd","Shouldn't pass");
     }
 }
