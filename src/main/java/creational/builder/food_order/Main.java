@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.food_order;
 
 public class Main {
     public static void main(String[] args) {
