@@ -1,4 +1,4 @@
-package structural.bridge;
+package structural.bridge.without_composition;
 
 public class Main {
     public static void main(String[] args) {
