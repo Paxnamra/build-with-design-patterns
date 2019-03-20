@@ -1,4 +1,4 @@
-package structural.bridge.with_composition;
+package structural.bridge.shapes_and_colors.with_composition;
 
 public class Blue implements Color {
 

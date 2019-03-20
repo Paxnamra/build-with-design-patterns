@@ -1,4 +1,4 @@
-package structural.bridge.without_composition;
+package structural.bridge.shapes_and_colors.without_composition;
 
 public class Main {
     public static void main(String[] args) {
