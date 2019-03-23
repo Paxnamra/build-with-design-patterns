@@ -16,6 +16,12 @@ public class Main {
 
         System.out.println(printedMaterial);
 
+        HtmlFormatter htmlFormatter = new HtmlFormatter();
+
+        String htmlMaterial = moviePrinter.print(htmlFormatter);
+
+        System.out.println(htmlMaterial);
+
 
     }
 }
